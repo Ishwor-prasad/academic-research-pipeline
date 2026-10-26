@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs,tabularx,longtable,array,multirow}
+\usepackage{graphicx}
+\usepackage{caption,subcaption}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{setspace}
+\onehalfspacing
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=blue!70!black,
+    urlcolor=teal
+}
+
+\title{\textbf{${TITLE}}}
+\author{\textbf{${AUTHOR}}\\
+\small ${AFFILIATION}\\
+\small Correspondence: \texttt{${EMAIL}}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+${ABSTRACT}
+
+\vspace{0.8em}
+\noindent \textbf{Keywords:} ${KEYWORDS}
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\label{sec:intro}
+${INTRODUCTION_TEXT}
+
+\section{Theoretical Foundations and Literature Review}
+\label{sec:litreview}
+${LITERATURE_REVIEW_TEXT}
+
+\section{Research Methodology and Operational Design}
+\label{sec:methodology}
+${METHODOLOGY_TEXT}
+
+\section{Empirical Results and Quantitative Analytics}
+\label{sec:results}
+${RESULTS_TEXT}
+
+\section{Discussion and Theoretical Synthesis}
+\label{sec:discussion}
+${DISCUSSION_TEXT}
+
+\section{Limitations and Future Research Agenda}
+\label{sec:limitations}
+${LIMITATIONS_TEXT}
+
+\section{Conclusion}
+\label{sec:conclusion}
+${CONCLUSION_TEXT}
+
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\newpage
+\appendix
+\section{Survey Instrument / Data Collection Protocol}
+\label{app:instrument}
+${APPENDIX_INSTRUMENT}
+
+\section{Complete Tabular Data Audit}
+\label{app:data_audit}
+${APPENDIX_DATA_AUDIT}
+
+\end{document}
